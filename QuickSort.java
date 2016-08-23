@@ -2,7 +2,7 @@
 public class QuickSort extends Pai {
 	
 	 private int vetor[];
-	    private int length;
+	    private int end;
 	 
 	    public void sort(int[] v) {
 	         
@@ -10,8 +10,8 @@ public class QuickSort extends Pai {
 	            return;
 	        }
 	        this.vetor = v;
-	        length = v.length;
-	        quickSort(0, length - 1);
+	        end = v.length;
+	        quickSort(0, end - 1);
 	    }
 	 
 	    private void quickSort(int init, int end) {
